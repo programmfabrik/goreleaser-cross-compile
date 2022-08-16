@@ -27,7 +27,7 @@ jobs:
         run: make build
 
       - name: Upload docker image
-        run: make upload
+        run: make push
 
       - name: Release
         uses: softprops/action-gh-release@v1
