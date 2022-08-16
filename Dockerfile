@@ -13,3 +13,7 @@ RUN npm -v
 
 RUN chown -R 1000:1000 "/root/.npm"
 RUN npm install -g dart-sass
+
+RUN adduser goreleaser --disabled-password
+
+USER goreleaser
