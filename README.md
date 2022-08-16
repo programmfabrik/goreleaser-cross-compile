@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository build a customized cross-compile docker image for goreleaser. It is used to cross-compile the fylr application.
+This repository extends the [cross-compile docker image for goreleaser](https://github.com/goreleaser/goreleaser-cross) to build the fylr application.
 
 ## Getting Started
 
