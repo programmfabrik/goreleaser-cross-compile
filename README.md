@@ -142,3 +142,9 @@ docker run \
     docker.fylr.io/goreleaser/goreleaser-cross:${GOLANG_CROSS_VERSION} \
     release --rm-dist --snapshot
 ```
+
+## Tag schema
+
+Tags follow the [origin version scheme] (https://github.com/goreleaser/goreleaser-cross/releases) with one exception:
+
+Versions that follow the `vX.X.X-X` scheme are intended as patches for the origin `vX.X.X` version 
