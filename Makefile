@@ -1,10 +1,11 @@
 VERSION?=v1.19.0
+ORIGIN_VERSION=v1.19.0
 DOCKER_REGISTRY_URL=docker.fylr.io/goreleaser/goreleaser-cross
 
 build:
 	docker build \
 		-t ${DOCKER_REGISTRY_URL}:${VERSION} \
-		--build-arg VERSION=${VERSION} \
+		--build-arg VERSION=${ORIGIN_VERSION} \
 		--no-cache \
 		-f Dockerfile .
 
