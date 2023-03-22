@@ -1,5 +1,5 @@
-VERSION?=v1.19.0
-ORIGIN_VERSION=v1.19.0
+VERSION?=v1.20.0
+ORIGIN_VERSION=v1.20.0
 DOCKER_REGISTRY_URL=docker.fylr.io/goreleaser/goreleaser-cross
 
 build:
