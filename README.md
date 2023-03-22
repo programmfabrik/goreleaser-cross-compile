@@ -2,13 +2,23 @@
 
 ## Description
 
-This repository extends the [cross-compile docker image for goreleaser](https://github.com/goreleaser/goreleaser-cross) to build the fylr application.
+This repository extends the [cross-compile docker image for goreleaser](https://github.com/goreleaser/goreleaser-cross) to build the [fylr](https://github.com/programmfabrik/fylr) application.
 
-## Getting Started
+## Tag schema
 
-Place a `.goreleaser.yml` file in the root of the repository.
+Tags follow the [origin version scheme] (https://github.com/goreleaser/goreleaser-cross/releases) with one exception:
 
-Example:
+Versions that follow the `vX.X.X-X` scheme are intended as patches for the origin `vX.X.X` version 
+
+## Updating this to a newer version
+
+1. at least update the versions in `Makefile`
+
+2. make a release in this repository with a new tag, syntax as the other existing releases
+
+## Using our variant of goreleaser-cross
+
+1. Place a `.goreleaser.yml` file in the root of the repository you want to use it in. See `.goreleaser.yml` in  [fylr](https://github.com/programmfabrik/fylr) if you have access. Otherwise: Example:
 
 ```yaml
 before:
@@ -127,7 +137,9 @@ changelog:
       - "WIP"
 ```
 
-### Snapshot
+2. run goreleaser-cross
+
+in this example: a snapshot (--snapshot)
 
 ```bash
 docker run \
@@ -143,8 +155,3 @@ docker run \
     release --rm-dist --snapshot
 ```
 
-## Tag schema
-
-Tags follow the [origin version scheme] (https://github.com/goreleaser/goreleaser-cross/releases) with one exception:
-
-Versions that follow the `vX.X.X-X` scheme are intended as patches for the origin `vX.X.X` version 
