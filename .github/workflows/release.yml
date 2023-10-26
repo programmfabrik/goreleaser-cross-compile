@@ -20,7 +20,7 @@ jobs:
           registry: docker.fylr.io
 
       - name: docker login (new registry)
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           username: ${{ secrets.FYLR_DOCKER_REGISTRY_2_LOGIN }}
           password: ${{ secrets.FYLR_DOCKER_REGISTRY_2_PASSWORD }}
