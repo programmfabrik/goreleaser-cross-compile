@@ -8,7 +8,7 @@ This repository extends the [cross-compile docker image for goreleaser](https://
 
 Tags follow the [origin version scheme] (https://github.com/goreleaser/goreleaser-cross/releases) with one exception:
 
-Versions that follow the `vX.X.X-X` scheme are intended as patches for the origin `vX.X.X` version 
+Versions that follow the `vX.X.X-X` scheme are intended as patches for the origin `vX.X.X` version
 
 ## Updating this to a newer version
 

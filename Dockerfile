@@ -4,7 +4,7 @@ FROM goreleaser/goreleaser-cross:${VERSION}
 RUN apt update && \
     apt upgrade -y
 
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
 
 RUN apt-get install nodejs
 
